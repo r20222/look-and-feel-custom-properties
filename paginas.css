@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+  box-sizing: border-box;
+  font-family: var(--Allefonts);
+}  
 :root {
   --pinda: #72AFA6;
   --white: #fff;
@@ -26,125 +33,12 @@ body {
   overflow-y: visible;
 }
 
-.img-patroon{
-  width: 50%;
-  margin-top: -4em;
-  margin-left: 35em;
-  /* left: 0 !important; */
-  
-}
-
-.Gebruik logo{ 
-  margin-bottom: 5em;
-}
-
-h1{
-  font-family: var(--Montserrat);
-  font-style: normal;
-  font-weight:var(--headerFontWeight);
-  font-size: 2em;
-  color: var(--pinda);
-  display: block;
-  font-size: 2em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  text-align: center;
-  margin-top: -15%;
-  -webkit-font-smoothing: initial;
-  margin-right: 22%;
-}
-
-h2{
-  font-family: var(--Helvetica);
-  font-weight: var(--headerFontWeight);
-  margin-left: -15px;
-  margin-top: 33px;
-  color: var(--pinda);
-  margin-bottom: 0.5em;
-
-}
-
-h3 {
-  font-family: var(--Helvetica);
-  font-weight: var(--headerFontWeight);
-  margin-left: -15px;
-  color: var(--pinda);
-  margin-bottom: 0.5em;
-}
-
-p{
- font-size: 16px;
- font-family: var(--Montserrat);
- margin-top: 1.5em;
- margin-left: -15px;
- margin-right: 10%;
- padding-bottom: 3em;
- text-align: left;
- line-height: 26px;
- color: #152a45;
-
-}
-
-b{
-  font-weight: bold;
-}
-
-main{
-margin-right: 30px;
-margin-bottom: 50px;
-}
-
-.Vini-Mini-img {
-  opacity: 30%;
-  z-index: -20;
-}
-
-.logo-img-1{
-  width: 300px;
-  padding: 10px;
-}
-
-
-.font-img{
-width: 250px;
-margin-top: 2em;
-}
-
-.Logo-Vini-Mini{
-  width: 233px;
-  margin-bottom: -2em;
-
-  /* padding-left: 400px; */
-}
-
-.Witruimte {
-  /* margin-bottom: 5em; */
-  width: 233px;
-  margin-top: 2em;
-}
-
-.navigatie-logo{
-width:800px;
-margin-top: 30px;
-margin-bottom: 30px;
-}
-/* menu */
-
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 28px;
-  box-sizing: border-box;
-  font-family: var(--Allefonts);
-}  
+/* navigation(menu) */
 
 .container {
   position: relative;
   width: 100%;
 }  
-
-/* navigation */
-
 .navigation {
   position: fixed;
   width: 340px;
@@ -222,6 +116,7 @@ margin-bottom: 30px;
 } 
 
 /* curve outside */ 
+/* Hoort ook bij navigatie */
 
 .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
@@ -251,9 +146,12 @@ margin-bottom: 30px;
   pointer-events: none;
 } 
 
+/* main/javascript voor de nav */ 
 
-/* main */ 
-
+main{
+  margin-right: 30px;
+  margin-bottom: 50px;
+  }
 .main {
   position: absolute;
   width: calc(100% - 300px);
@@ -306,9 +204,105 @@ margin-left: 45em;
   align-items: center;
   font-size: 2.5em;
   cursor: pointer;
- 
 }
 
+/* Main(inhoud,content) */
+.img-patroon{
+  width: 50%;
+  margin-top: -4em;
+  margin-left: 35em;
+  /* left: 0 !important; */
+  
+}
+
+.Gebruik logo{ 
+  margin-bottom: 5em;
+}
+
+h1{
+  font-family: var(--Montserrat);
+  font-style: normal;
+  font-weight:var(--headerFontWeight);
+  font-size: 2em;
+  color: var(--pinda);
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  text-align: center;
+  margin-top: -15%;
+  -webkit-font-smoothing: initial;
+  margin-right: 22%;
+}
+
+h2{
+  font-family: var(--Helvetica);
+  font-weight: var(--headerFontWeight);
+  margin-left: -15px;
+  margin-top: 33px;
+  color: var(--pinda);
+  margin-bottom: 0.5em;
+
+}
+
+h3 {
+  font-family: var(--Helvetica);
+  font-weight: var(--headerFontWeight);
+  margin-left: -15px;
+  color: var(--pinda);
+  margin-bottom: 0.5em;
+}
+
+p{
+ font-size: 16px;
+ font-family: var(--Montserrat);
+ margin-top: 1.5em;
+ margin-left: -15px;
+ margin-right: 10%;
+ padding-bottom: 3em;
+ text-align: left;
+ line-height: 26px;
+ color: #152a45;
+
+}
+
+b{
+  font-weight: bold;
+}
+
+.Vini-Mini-img {
+  opacity: 30%;
+  z-index: -20;
+}
+
+.logo-img-1{
+  width: 300px;
+  padding: 10px;
+}
+
+.font-img{
+width: 250px;
+margin-top: 2em;
+}
+.Logo-Vini-Mini{
+  width: 233px;
+  margin-bottom: -2em;
+
+  /* padding-left: 400px; */
+}
+.Witruimte {
+  /* margin-bottom: 5em; */
+  width: 233px;
+  margin-top: 2em;
+}
+.navigatie-logo{
+width:800px;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+
+/* Mediaquerie */
 @media only screen and (max-width: 1190px) { 
 
   .navigation{
