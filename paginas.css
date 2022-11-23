@@ -1,3 +1,13 @@
+:root {
+  --pinda: #72AFA6;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --back1: #222;
+  --black2: #999;
+  --card: #D5EDEE;
+  --headerFontWeight:700;
+} 
+
 body {
   margin: 0 auto;
   min-height: 100vh;
@@ -28,7 +38,7 @@ body {
 h1{
   font-family: montserrat, sans-serif;
   font-style: normal;
-  font-weight:700;
+  font-weight:var(--headerFontWeight);
   font-size: 2em;
   color: var(--pinda);
   display: block;
@@ -43,7 +53,7 @@ h1{
 
 h2{
   font-family: Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: var(--headerFontWeight);
   margin-left: -15px;
   margin-top: 33px;
   color: var(--pinda);
@@ -53,7 +63,7 @@ h2{
 
 h3 {
   font-family: Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: var(--headerFontWeight);
   margin-left: -15px;
   color: var(--pinda);
   margin-bottom: 0.5em;
@@ -123,15 +133,6 @@ margin-bottom: 30px;
   line-height: 28px;
   box-sizing: border-box;
   font-family: montserrat, sans-serif, Helvetica;
-} 
-
-:root {
-  --pinda: #72AFA6;
-  --white: #fff;
-  --grey: #f5f5f5;
-  --back1: #222;
-  --black2: #999;
-  --card: #D5EDEE;
 }  
 
 .container {
