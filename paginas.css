@@ -6,6 +6,9 @@
   --black2: #999;
   --card: #D5EDEE;
   --headerFontWeight:700;
+  --Helvetica:Helvetica, sans-serif;
+  --Montserrat:montserrat, sans-serif;
+  --Allefonts:montserrat, sans-serif, Helvetica;
 } 
 
 body {
@@ -36,7 +39,7 @@ body {
 }
 
 h1{
-  font-family: montserrat, sans-serif;
+  font-family: var(--Montserrat);
   font-style: normal;
   font-weight:var(--headerFontWeight);
   font-size: 2em;
@@ -52,7 +55,7 @@ h1{
 }
 
 h2{
-  font-family: Helvetica, sans-serif;
+  font-family: var(--Helvetica);
   font-weight: var(--headerFontWeight);
   margin-left: -15px;
   margin-top: 33px;
@@ -62,7 +65,7 @@ h2{
 }
 
 h3 {
-  font-family: Helvetica, sans-serif;
+  font-family: var(--Helvetica);
   font-weight: var(--headerFontWeight);
   margin-left: -15px;
   color: var(--pinda);
@@ -71,7 +74,7 @@ h3 {
 
 p{
  font-size: 16px;
- font-family: montserrat, sans-serif;
+ font-family: var(--Montserrat);
  margin-top: 1.5em;
  margin-left: -15px;
  margin-right: 10%;
@@ -132,7 +135,7 @@ margin-bottom: 30px;
   padding: 0;
   line-height: 28px;
   box-sizing: border-box;
-  font-family: montserrat, sans-serif, Helvetica;
+  font-family: var(--Allefonts);
 }  
 
 .container {
